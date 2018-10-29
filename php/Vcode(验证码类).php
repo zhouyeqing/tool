@@ -12,7 +12,6 @@ class Vcode {
     private $disturbColorNum;    //干扰元素数量
     private $checkCode;          //验证码字符
     private $image;              //验证码资源
-
     function __construct ($width=80, $height=20, $codeNum=4) {
         $this->height = $height;
         $this->width = $width;
@@ -30,7 +29,6 @@ class Vcode {
         $this->outImg();
         return '';
     }
-
     private function outImg () {
         $this->getCreateImage();
         $this->setDisturbColor();
